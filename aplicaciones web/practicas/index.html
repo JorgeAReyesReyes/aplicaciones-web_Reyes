@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Cabecera del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al stylesheet de la página -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio" >Inicio</a></li> <!-- Enlace a la sección "Inicio" -->
+            <li><a href="#sobre-mi">Sobre mí</a></li> <!-- Enlace a la sección "Sobre mí" -->
+            <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección "Contacto" -->
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <section id="inicio">
+        <h1>Bienvenido a mi Página Personal</h1> <!-- Título principal de la página -->
+        <p>Esta es mi primera página en HTML.</p> <!-- Descripción del propósito de la página -->
+    </section>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2> <!-- Subtítulo de la sección "Sobre mí" -->
+        <ul>
+            <li>Me gusta el rojo.</li> <!-- Detalle 1 sobre ti -->
+            <li>Me gusta el rock.</li> <!-- Detalle 2 sobre ti -->
+            <li>Me gustan las películas de terror.</li> <!-- Detalle 3 sobre ti -->
+        </ul>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2> <!-- Subtítulo de la sección "Contacto" -->
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo Nombre -->
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo electrónico:</label> <!-- Etiqueta para el campo Correo electrónico -->
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="comentarios">Comentarios:</label> <!-- Etiqueta para el campo Comentarios -->
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Enviar"> <!-- Texto del botón de enviar -->
+        </form>
+    </section>
+</body>
+</html>
