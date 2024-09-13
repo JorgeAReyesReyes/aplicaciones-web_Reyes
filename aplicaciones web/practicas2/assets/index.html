@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Cabecera del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al stylesheet de la página -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+   
+
+    <!-- Sección principal -->
+    <section id="inicio">
+        <!-- Slider como encabezado -->
+    <header class="slider">
+        <img src="assets/slider/imagen.jpg" alt="portada 1" class="slide active">
+        <img src="assets/slider/imagen2.jpg" alt="portada 2" class="slide">
+        <img src="assets/slider/imagen3.webp" alt="portada 3" class="slide">
+    </header>
+        <h1>Bienvenido a mi Página Personal</h1>
+        <p>Esta es mi primera página en HTML.</p>
+    </section>
+       
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2> <!-- Subtítulo de la sección "Sobre mí" -->
+        <ul>
+            <li>Me gusta el rojo.</li> <!-- Detalle 1 sobre ti -->
+            <li>Me gusta el rock.</li> <!-- Detalle 2 sobre ti -->
+            <li>Me gustan las películas de terror.</li> <!-- Detalle 3 sobre ti -->
+        </ul>
+</section>
+ <!--seccion de catalog de productos-->
+
+<section id="gaeria de productos">   
+    <div class="galeria"> 
+        <div class="productos">
+            <img src="assets/images/producto 1.jpg" alt="pproducto 1"
+            <h3> producto 1 </h3>
+            <p> Descripción </p>
+            <button>comprar</button>
+       
+                <div class="productos">
+                    <img src="assets/images/producto 2.jpg" alt="pproducto 2"
+                    <h3> producto 2 </h3>
+                    <p> Descripción </p>
+       
+        
+          <div class="productos">
+          <img src="assets/images/producto 3.jpg" alt="producto 3"
+             <h3> producto 3 </h3>
+             <p> Descripción </p>
+    
+            <div class="productos">
+                <img src="assets/images/producto 4.jpg" alt="producto 4"
+                   <h3> producto 4 </h3>
+                   <p> Descripción </p>
+            
+            <div class="productos">
+                    <img src="assets/images/producto 5.jpg" alt="producto 5"
+                       <h3> producto 5 </h3>
+                       <p> Descripción </p>
+
+
+        </div>
+
+    </section>
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2> <!-- Subtítulo de la sección "Contacto" -->
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo Nombre -->
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo electrónico:</label> <!-- Etiqueta para el campo Correo electrónico -->
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="comentarios">Comentarios:</label> <!-- Etiqueta para el campo Comentarios -->
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Enviar"> <!-- Texto del botón de enviar -->
+        </form>
+    </section>
+
+</body><script src="slider.js"></script>
+</html>
