@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Cabecera del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al stylesheet de la página -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <section id="inicio">
+        <!-- Slider como encabezado -->
+    <header class="slider">
+        <img src="assets/slider/imagen.jpg" alt="portada 1" class="slide active">
+        <img src="assets/slider/imagen2.jpg" alt="portada 2" class="slide">
+        <img src="assets/slider/imagen3.webp" alt="portada 3" class="slide">
+    </header>
+        <h1>Bienvenido a mi Página Personal</h1>
+        <p>Esta es mi primera página en HTML.</p>
+    </section>
+
+</section>
+<!-- Formulario de contacto -->
+<section id="contacto">
+    <h2>Contacto</h2> <!-- Subtítulo de la sección "Contacto" -->
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo Nombre -->
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="correo">Correo electrónico:</label> <!-- Etiqueta para el campo Correo electrónico -->
+        <input type="email" id="correo" name="correo" required>
+        <br>
+        <label for="comentarios">Comentarios:</label> <!-- Etiqueta para el campo Comentarios -->
+        <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+        <br>
+        <input type="submit" value="Enviar"> <!-- Texto del botón de enviar -->
+    </form>
+</section>
+
+</body><script src="slider.js"></scrip>
+
+    <script
+        const parametroURL= new
+        URLSearchParams (window,location,search);
+        const id_poducto = urlparams.get('id_producti');
+        //datos del producto
+        const producto= {
+           
+            producto1: {
+                nombre: "peluche",
+                imagen: "assets/images",
+                descripcion:"descripcion del producto",
+                precio: "$20.99"
+            },
+            producto2: {
+                nombre: "",
+                imagen: "assets/images",
+                descripcion:"descripcion del producto",
+                precio: "$20.99"
+            },
+        }
+
+        //actualizar  la Etiqueta html segun el productoe//
+        
+        if(condition){
+        document. getElementById("nombre_producto").textContent=producto
+        document.getElementById("img_pto").src=<poducto class="image">id_poducto</poducto>
+        
+            }else{
+                document.getElementById("nombre_producto").textContent="el producto no existe"
+                document.getElementById("img_pto").style.display="name"
+
+        }
+        <script>
+
+
+
+
+
+</html>
