@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eb1f10;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+    font-size: 200%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: "SUSE", sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+h1 {
+    color: #f52a0f;
+    font-family: "Protest Guerrilla";
+}
+
+h2 {
+    color: #000000;
+    font-family: "Protest Guerrilla";
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.productos {
+    flex: 1 1 200px;
+    background-color: rgb(205, 221, 242);
+    text-align: center;
+    border: 1px solid #333;
+    padding: 15px;
+    box-shadow: 0px 2px 5px;
+}
+
+.productos h3 {
+    font-family: "Protest Guerrilla";
+}
+
+.productos img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.encabezado {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.encabezado img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #ee0c0c;
+}
+
+.producto-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-imagen img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.producto-detalles {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-detalles h1 {
+    color: #333;
+    font-family: "Protest Guerrilla";
+    font-size: 2em;
+}
+
+.producto-detalles p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.producto-detalles h2 {
+    color: #f50a0a;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#cantidad {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.boton-comprar {
+    background-color: #fa0a0a;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.boton-comprar:hover {
+    background-color: hsl(7, 99%, 49%);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.tituloprincipal {
+    text-align: center;
+}
