@@ -1,106 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practica 1</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="assets/images/house.png" />
-    <script src="scripts/slider.js" defer></script>
+    <!-- Cabecera del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al stylesheet de la página -->
 </head>
 <body>
-    <div class="encabezado">
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobremi">Quienes somos</a></li>
-                <li><a href="#galeria-productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="slider">
-            <img src="assets/images/encabezado1.jpg" alt="encabezado1" class="slide active" />
-            <img src="assets/images/encabezado2.jpg" alt="encabezado2" class="slide" />
-            <img src="assets/images/encabezado3.jpg" alt="encabezado3" class="slide" />
-        </div>
-    </div>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+   
 
+    <!-- Sección principal -->
     <section id="inicio">
-        <h1>Inicio</h1>
-        <p>¡Bienvenido a mi primera página web!</p>
+        <!-- Slider como encabezado -->
+    <header class="slider">
+        <img src="assets/slider/imagen.jpg" alt="portada 1" class="slide active">
+        <img src="assets/slider/imagen2.jpg" alt="portada 2" class="slide">
+        <img src="assets/slider/imagen3.webp" alt="portada 3" class="slide">
+    </header>
+        <h1>Bienvenido a mi Página Personal</h1>
+        <p>Esta es mi primera página en HTML.</p>
     </section>
+       
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2> <!-- Subtítulo de la sección "Sobre mí" -->
+        <ul>
+            <li>Me gusta el rojo.</li> <!-- Detalle 1 sobre ti -->
+            <li>Me gusta el rock.</li> <!-- Detalle 2 sobre ti -->
+            <li>Me gustan las películas de terror.</li> <!-- Detalle 3 sobre ti -->
+        </ul>
+</section>
+ <!--seccion de catalog de productos-->
 
-    <section id="sobremi">
-        <h2>Quienes somos</h2>
-        <p>Somos una empresa dedicada a la venta de gadgets Apple.</p>
-    </section>
+<section id="gaeria de productos">   
+    <div class="galeria"> 
+        <div class="productos">
+            <img src="assets/images/producto 1.jpg" alt="pproducto 1"
+            <h3> producto 1 </h3>
+            <p> Descripción </p>
+            <button>comprar</button>
+       
+                <div class="productos">
+                    <img src="assets/images/producto 2.jpg" alt="pproducto 2"
+                    <h3> producto 2 </h3>
+                    <p> Descripción </p>
+       
+        
+          <div class="productos">
+          <img src="assets/images/producto 3.jpg" alt="producto 3"
+             <h3> producto 3 </h3>
+             <p> Descripción </p>
+    
+            <div class="productos">
+                <img src="assets/images/producto 4.jpg" alt="producto 4"
+                   <h3> producto 4 </h3>
+                   <p> Descripción </p>
+            
+            <div class="productos">
+                    <img src="assets/images/producto 5.jpg" alt="producto 5"
+                       <h3> producto 5 </h3>
+                       <p> Descripción </p>
 
-    <section id="galeria-productos">
-        <h2>Productos</h2>
-        <div class="galeria">
-            <div class="productos">
-                <h3>FUNDA AZUL</h3>
-                <img src="assets/images/producto1.jpeg" alt="Funda Azul" />
-                <p>Funda para iPhone de color azul</p>
-                <p>$ 100.00</p>
-                <a href="vista-producto.html?id_producto=1"><button>Comprar</button></a>
-            </div>
-            <div class="productos">
-                <h3>FUNDA ROSA</h3>
-                <img src="assets/images/producto2.jpeg" alt="Funda Rosa" />
-                <p>Funda para iPhone de color rosa</p>
-                <p>$ 100.00</p>
-                <a href="vista-producto.html?id_producto=2"><button>Comprar</button></a>
-            </div>
-            <div class="productos">
-                <h3>FUNDA ROJA</h3>
-                <img src="assets/images/producto3.jpeg" alt="Funda Roja" />
-                <p>Funda para iPhone de color rojo</p>
-                <p>$ 100.00</p>
-                <a href="vista-producto.html?id_producto=3"><button>Comprar</button></a>
-            </div>
-            <div class="productos">
-                <h3>Audífonos blancos</h3>
-                <img src="assets/images/producto4.avif" alt="Audífonos blancos" />
-                <p>Audífonos blancos de alta calidad</p>
-                <p>$ 100.00</p>
-                <a href="vista-producto.html?id_producto=4"><button>Comprar</button></a>
-            </div>
-            <div class="productos">
-                <h3>Audífonos morados</h3>
-                <img src="assets/images/producto5.webp" alt="Audífonos morados" />
-                <p>Audífonos morados con excelente sonido</p>
-                <p>$ 100.00</p>
-                <a href="vista-producto.html?id_producto=5"><button>Comprar</button></a>
-            </div>
+
         </div>
-    </section>
 
+    </section>
+    <!-- Formulario de contacto -->
     <section id="contacto">
-        <h2 style="text-align: center;">Contacto</h2>
+        <h2>Contacto</h2> <!-- Subtítulo de la sección "Contacto" -->
         <form action="#" method="post">
-            <fieldset>
-                <legend>Mis datos</legend>
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required />
-                <br />
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required />
-                <br />
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="7" placeholder="Escribe tu mensaje"></textarea>
-                <br />
-                <input type="submit" value="Enviar datos" />
-            </fieldset>
+            <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo Nombre -->
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo">Correo electrónico:</label> <!-- Etiqueta para el campo Correo electrónico -->
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <label for="comentarios">Comentarios:</label> <!-- Etiqueta para el campo Comentarios -->
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Enviar"> <!-- Texto del botón de enviar -->
         </form>
     </section>
 
-<footer class="footer">
-    <p>¡Gracias por visitar la página!</p>
-</footer>
-
-</body>
+</body><script src="slider.js"></script>
 </html>
