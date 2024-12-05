@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 1</title>
+    <script src="scripts/slider.js" defer></script>
+</head>
+<body>
+    <div class="encabezado">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Quienes somos</a></li>
+                <li><a href="#galeria-productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <img src="{% static 'images/slider/imagen.jpg' %}" alt="encabezado1" class="slide active" />
+            <img src="{% static 'images/slider/imagen2.jpg' %}" alt="encabezado2" class="slide" />
+            <img src="{% static 'images/slider/imagen3.jpg' %}" alt="encabezado3" class="slide" />
+        </div>
+    </div>
+
+    <section id="inicio">
+        <h1>Inicio</h1>
+        <p>mi primera pagina</p>
+    </section>
+
+    <section id="sobremi">
+        <h2>sobre esta pagina</h2>
+        <p>honestos</p>
+        <p>dedicados</p>
+        <p>eficientes</p>
+    </section>
+
+    <section id="galeria-productos">
+        <h2>Productos</h2>
+        <div class="galeria">
+            <div class="productos">
+                <h3>medico de la peste</h3>
+                <img src="{% static 'images/images/producto1.jpg' %}" alt="producto1" />
+                <p>peluche medico de la peste 30 cm</p>
+                <p>$ 100.00</p>
+                <a href="vista-producto.html?id_producto=1"><button>Comprar</button></a>
+            </div>
+            <div class="productos">
+                <h3>chtulhu</h3>
+                <img src="{% static 'images/images/producto2.jpg' %}" alt="producto2" />
+                <p>figura de coleccion</p>
+                <p>$ 300.00</p>
+                <a href="vista-producto.html?id_producto=2"><button>Comprar</button></a>
+            </div>
+            <div class="productos">
+                <h3>rey xenomorpho</h3>
+                <img src="{% static 'images/images/producto3.jpg' %}" alt="producto3" />
+                <p>Figura de coleccion rey alien</p>
+                <p>$ 650.00</p>
+                <a href="vista-producto.html?id_producto=3"><button>Comprar</button></a>
+            </div>
+            <div class="productos">
+                <h3>depredador</h3>
+                <img src="{% static 'images/images/producto4.jpg' %}" alt="producto4" />
+                <p>figura de coleccion rey alien</p>
+                <p>$ 700.00</p>
+                <a href="vista-producto.html?id_producto=4"><button>Comprar</button></a>
+            </div>
+            <div class="productos">
+                <h3>figura jason vorhees</h3>
+                <img src="{% static 'images/images/producto5.jpg' %}" alt="producto5" />
+                <p>figura de coleccion saga viernes 13</p>
+                <p>$ 400.00</p>
+                <a href="vista-producto.html?id_producto=5"><button>Comprar</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2 style="text-align: center;">Contacto</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Mis datos</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required />
+                <br />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required />
+                <br />
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="7" placeholder="Escribe tu mensaje"></textarea>
+                <br />
+                <input type="submit" value="Enviar datos" />
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Mi página web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
